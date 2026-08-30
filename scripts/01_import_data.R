@@ -1,66 +1,97 @@
 # ====================================
 # FBDP Analytics Portfolio
-# Script 01 - Import Data
-# Author: Kavya
+# Script 01 - Import Raw Data
+# Author: Kavya V R
+# ====================================
+
+# ====================================
+# Load Packages
 # ====================================
 
 library(readxl)
 library(tidyverse)
 library(janitor)
 
-# Read raw Excel sheet without headers
-raw_data <- read_excel(
-  "data/raw/Analysis for March 2026 data -trial.xlsx",
-  sheet = "March 2026 data",
+# ====================================
+# File Path
+# ====================================
+
+file_path <- "data/raw/Analysis for March 2026 data -trial.xlsx"
+
+# ====================================
+# Available Worksheets
+# ====================================
+
+excel_sheets(file_path)
+
+# ====================================
+# Import Core Datasets
+# ====================================
+
+master_data <- read_excel(
+  path = file_path,
+  sheet = "Master",
   col_names = FALSE
 )
 
-# Extract district and block names
-district_names <- raw_data[1, ]
-block_names <- raw_data[2, ]
-
-# Remove metadata rows
-clean_data <- raw_data[-c(1:4), ]
-
-# Rename metadata columns
-names(clean_data)[1:7] <- c(
-  "SNO",
-  "KDI",
-  "Tile_ID",
-  "Indicator",
-  "Theme",
-  "Direction",
-  "Periodicity"
+three_year_data <- read_excel(
+  path = file_path,
+  sheet = "3 years of data",
+  col_names = FALSE
 )
 
-# Assign block names as column names
-block_vector <- unlist(block_names[8:57])
-names(clean_data)[8:57] <- block_vector
-
-# Convert from wide format to long format
-long_data <- clean_data |>
-  pivot_longer(
-    cols = 8:57,
-    names_to = "Block",
-    values_to = "Value"
-  )
-
-# Create district-block lookup table
-district_vector <- unlist(district_names[8:57])
-
-lookup_table <- tibble(
-  District = district_vector,
-  Block = block_vector
+block_baseline <- read_excel(
+  path = file_path,
+  sheet = "Block Baseline 2024",
+  col_names = FALSE
 )
 
-# Add district names to the long dataset
-final_data <- long_data |>
-  left_join(
-    lookup_table,
-    by = "Block"
-  ) |>
-  select(
-    District,
-    Block,
-    everything()
-  )
+district_baseline <- read_excel(
+  path = file_path,
+  sheet = "District Baseline 2024",
+  col_names = FALSE
+)
+
+first_year_target <- read_excel(
+  path = file_path,
+  sheet = "1st year target",
+  col_names = FALSE
+)
+
+second_year_target <- read_excel(
+  path = file_path,
+  sheet = "2nd year target",
+  col_names = FALSE
+)
+
+district_2025 <- read_excel(
+  path = file_path,
+  sheet = "District - March 2025 data",
+  col_names = FALSE
+)
+
+district_2026 <- read_excel(
+  path = file_path,
+  sheet = "District - March 2026 data",
+  col_names = FALSE
+)
+
+# ====================================
+# Inspect Imported Data
+# ====================================
+
+glimpse(master_data)
+
+glimpse(three_year_data)
+
+glimpse(block_baseline)
+
+glimpse(district_baseline)
+
+glimpse(first_year_target)
+
+glimpse(second_year_target)
+
+glimpse(district_2025)
+
+glimpse(district_2026)
