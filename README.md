@@ -2,7 +2,7 @@
 
 An independent portfolio project analysing development performance across 50 selected economically weaker blocks in Tamil Nadu, India, using indicator analysis, performance scoring, relative benchmarking and interactive visualisation in R.
 
-**Live dashboard:** [Block Development Analytics](https://kavya-analytics.shinyapps.io/fbdp-analytics-portfolio/)
+**Live dashboard:** [Block Development Analytics](https://kavya-analytics.shinyapps.io/block-development-analytics/)
 
 **Project overview**
 
