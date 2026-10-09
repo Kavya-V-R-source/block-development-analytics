@@ -6,3 +6,7 @@ data/raw/
 *.xls
 *.csv
 *.png
+# Local and temporary files
+rsconnect/
+*.exe
+~$*.docx
