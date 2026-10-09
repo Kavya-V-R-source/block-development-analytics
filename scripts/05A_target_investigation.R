@@ -1,5 +1,5 @@
 # ====================================
-# FBDP Analytics Portfolio
+# Block Development Analytics
 # Script 05A - Data Diagnostics
 # Author: Kavya V R
 #

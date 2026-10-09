@@ -1,5 +1,5 @@
 # ====================================
-# FBDP Analytics Portfolio
+# Block Development Analytics
 # Script 14 - Theme Score Normalisation
 # Author: Kavya V R
 # ====================================

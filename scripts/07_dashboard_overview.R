@@ -1,5 +1,5 @@
 # ====================================
-# FBDP Analytics Portfolio
+# Block Development Analytics
 # Script 07 - Dashboard Overview
 # Author: Kavya V R
 # ====================================

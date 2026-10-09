@@ -1,6 +1,6 @@
 
 # ============================================================
-# FBDP ANALYTICS DASHBOARD
+# BLOCK DEVELOPMENT ANALYTICS
 # Portfolio prototype | Illustrative data
 # ============================================================
 
@@ -439,7 +439,7 @@ ui <- navbarPage(
   
   footer = tags$div(
     class = "footer-note",
-    "FBDP Analytics | Independent portfolio prototype | Illustrative data"
+    "Block Development Analytics | Independent portfolio project | Illustrative data"
   )
 )
 

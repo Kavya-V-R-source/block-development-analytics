@@ -1,5 +1,5 @@
 # ====================================
-# FBDP Analytics Portfolio
+# Block Development Analytics
 # Script 05B - Indicator Master
 # Author: Kavya V R
 # ====================================

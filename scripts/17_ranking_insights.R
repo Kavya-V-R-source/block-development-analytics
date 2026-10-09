@@ -1,5 +1,5 @@
 # ====================================
-# FBDP Analytics Portfolio
+# Block Development Analytics
 # Script 17 - Ranking Insights
 # Author: Kavya V R
 # ====================================

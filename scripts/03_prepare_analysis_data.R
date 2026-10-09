@@ -1,5 +1,5 @@
 # ====================================
-# FBDP Analytics Portfolio
+# Block Development Analytics
 # Script 03 - Prepare Analysis Data
 # Author: Kavya V R
 # ====================================

@@ -1,5 +1,5 @@
 # ====================================
-# FBDP Analytics Portfolio
+# Block Development Analytics
 # Script 04 - Exploratory Analysis
 # Author: Kavya V R
 # ====================================

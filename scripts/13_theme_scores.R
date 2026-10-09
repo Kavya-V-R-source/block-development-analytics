@@ -1,5 +1,5 @@
 # ====================================
-# FBDP Analytics Portfolio
+# Block Development Analytics
 # Script 13 - Theme Scores
 # Author: Kavya V R
 # ====================================
