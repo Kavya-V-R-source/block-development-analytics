@@ -32,6 +32,6 @@ Rankings provide relative benchmarks within the comparison group, rather than ab
 
 **Tools**
 
-R · tidyverse · ggplot2 · Shiny
+**R · tidyverse · ggplot2 · Shiny**
 
-This is an independent technical portfolio project, not an official government assessment. Interpretation is subject to the implemented scoring rules, data coverage and methodological limitations.
+_This is an independent technical portfolio project, not an official government assessment. Interpretation is subject to the implemented scoring rules, data coverage and methodological limitations._
