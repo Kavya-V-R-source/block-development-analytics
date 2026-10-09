@@ -1,6 +1,6 @@
 **Block Development Analytics**
 
-An independent portfolio project examining block-level development performance across Tamil Nadu, India, through indicator analysis, performance scoring, relative benchmarking and interactive visualisation using R.
+An independent portfolio project analysing development performance across 50 selected economically weaker blocks in Tamil Nadu, India, using indicator analysis, performance scoring, relative benchmarking and interactive visualisation in R.
 
 **Live dashboard:** [Block Development Analytics](https://kavya-analytics.shinyapps.io/fbdp-analytics-portfolio/)
 
